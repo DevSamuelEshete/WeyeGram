@@ -4,6 +4,7 @@ config({ path: `.env` });
 
 export const {
   NODE_ENV,
+  DOMAIN,
   PORT,
 
   DB_USER,

@@ -4,6 +4,7 @@ import {
   SESSION_SECRET,
   SESSION_AGE,
   NODE_ENV,
+  DOMAIN,
 } from "./config/env.config";
 
 import { log } from "./utils";
@@ -34,7 +35,10 @@ const redisStore = new RedisStore({ client });
 
 app.use(
   cors({
-    origin: [`http://localhost:${PORT}`, "https://weyegram.onrender.com/"],
+    origin: [
+      `http://localhost:${PORT}`,
+      DOMAIN || "https://weyegram.onrender.com",
+    ],
     credentials: true,
   }),
 );

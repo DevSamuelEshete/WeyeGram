@@ -2,6 +2,7 @@ import { create } from "zustand";
 import { io } from "socket.io-client";
 import axiosInstance from "../utils/axiosInstance";
 import toast from "react-hot-toast";
+import { BASE_URI } from "../constants";
 
 const useAuthStore = create((set, get: any) => ({
   authUser: null,
@@ -218,7 +219,7 @@ const useAuthStore = create((set, get: any) => ({
 
     if (!authUser || socket?.connected) return;
 
-    const new_socket = io("http://localhost:5000", {
+    const new_socket = io(BASE_URI, {
       query: { user_id: authUser.id },
     });
 
