@@ -71,6 +71,8 @@ if (NODE_ENV === "production") {
   });
 }
 
+console.log("PORT:", PORT);
+
 server.listen(PORT, async () => {
   console.log(`API running on localhost:${PORT}`);
   log({ type: "success", info: "Successfully connected to database" });
