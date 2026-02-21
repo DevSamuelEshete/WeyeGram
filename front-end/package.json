@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "vite",
     "start": "npm run start --prefix ../back-end",
-    "build": "tsc -b && vite build",
+    "build": "npm i; tsc -b && vite build; npm i --prefix ../back-end",
     "lint": "eslint .",
     "preview": "vite preview"
   },
