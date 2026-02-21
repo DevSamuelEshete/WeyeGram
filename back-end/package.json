@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "ts-node ./src/app.ts",
+    "start": "npx tsx ./src/app.ts",
     "dev": "nodemon --watch 'src/**/*' -e ts,tsx --exec 'ts-node' ./src/app.ts"
   },
   "keywords": [],
@@ -36,14 +36,14 @@
     "pg": "^8.16.3",
     "pgsql": "^1.0.0",
     "redis": "^5.10.0",
-    "socket.io": "^4.8.3",
-    "ts-node": "^10.9.2"
+    "socket.io": "^4.8.3"
   },
   "devDependencies": {
     "@types/express": "^5.0.5",
     "@types/nodemon": "^1.19.6",
     "@types/pg": "^8.15.6",
     "drizzle-kit": "^0.31.7",
-    "nodemon": "^3.1.11"
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2"
   }
 }
