@@ -34,7 +34,7 @@ const redisStore = new RedisStore({ client });
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: `http://localhost:${PORT}`,
     credentials: true,
   }),
 );
