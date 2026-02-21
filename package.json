@@ -1,0 +1,21 @@
+{
+  "name": "weyegram",
+  "version": "1.0.0",
+  "description": "A small WebApp focoused on chatting",
+  "main": "test.js",
+  "scripts": {
+    "build": "npm install --prefix front-end && npm install --prefix back-end && npm run build --prefix front-end",
+    "start": "npm run start --prefix back-end",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DevSamuelEshete/WeyeGram.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/DevSamuelEshete/WeyeGram/issues"
+  },
+  "homepage": "https://github.com/DevSamuelEshete/WeyeGram#readme"
+}
