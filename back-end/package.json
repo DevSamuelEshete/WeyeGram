@@ -1,0 +1,48 @@
+{
+  "name": "back-end",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --watch 'src/**/*' -e ts,tsx --exec 'ts-node' ./src/app.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@arcjet/inspect": "^1.0.0-beta.15",
+    "@arcjet/node": "^1.0.0-beta.15",
+    "@neondatabase/serverless": "^1.0.2",
+    "@types/bcrypt": "^6.0.0",
+    "@types/cookie-parser": "^1.4.10",
+    "@types/cors": "^2.8.19",
+    "@types/express-session": "^1.18.2",
+    "@types/nodemailer": "^7.0.4",
+    "@upstash/redis": "^1.36.2",
+    "bcrypt": "^6.0.0",
+    "cloudinary": "^2.8.0",
+    "connect-redis": "^9.0.0",
+    "cookie-parser": "^1.4.7",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "drizzle-orm": "^0.44.7",
+    "express": "^5.1.0",
+    "express-session": "^1.18.2",
+    "http": "^0.0.1-security",
+    "ioredis": "^5.8.2",
+    "json-web-token": "^3.2.0",
+    "nodemailer": "^7.0.11",
+    "pg": "^8.16.3",
+    "pgsql": "^1.0.0",
+    "redis": "^5.10.0",
+    "socket.io": "^4.8.3"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.5",
+    "@types/nodemon": "^1.19.6",
+    "@types/pg": "^8.15.6",
+    "drizzle-kit": "^0.31.7",
+    "nodemon": "^3.1.11",
+    "ts-node": "^10.9.2"
+  }
+}

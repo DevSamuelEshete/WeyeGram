@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weyegram</title>
+    <link rel="icon" href="./media/Logo.svg">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        body {
+            background-color: #0F171E;
+            color: #b5c2d1;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: .5rem;
+        }
+
+        .logo-title {
+            font-weight: 900;
+        }
+
+        .content {
+            background-color: #14202E;
+            height: 30rem;
+            max-width: 35rem;
+            padding: .5rem;
+        }
+
+        section {
+            display: flex;
+            flex-direction: column;
+            gap: 5rem;
+            background: #1A2834;
+            border-radius: 8px;
+        }
+
+        .main {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+            align-items: center;
+        }
+
+        .content .header {
+            border-bottom: solid 2px #203241;
+        }
+
+        .content .header h2 {
+            font-weight: bold;
+        }
+
+        .content h3 {
+            font-weight: normal;
+            text-align: left;
+        }
+
+        .chat-box {
+            background-color: #101a2589;
+            padding: .5rem;
+            border-radius: 8px;
+            width: 100%;
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .chat-box div {
+            width: 100%;
+            display: flex;
+            padding: .2rem;
+        }
+
+        .chat-box div p {
+            padding: 1rem;
+            border-radius: .5rem;
+        }
+
+        .chat-box div b {
+            color: red;
+        }
+
+        .chat-box .left {
+            justify-content: start;
+        }
+
+        .chat-box .left p {
+            background-color: #2B4257;
+        }
+
+        .chat-box .right {
+            justify-content: end;
+        }
+
+        .chat-box .right p {
+            background-color: #203241;
+        }
+
+        .fotter {
+            width: 100%;
+            background: #14202E;
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <img class="logo" src="./media/Logo(4).svg" alt="">
+            <h1 class="logo-title">Weyegram</h1>
+        </header>
+        <div class="content">
+            <div class="header">
+                <h2>Email Verification</h2>
+            </div>
+            <div class="main">
+                <div>
+                    <h3>
+                        Hi there,
+                        We noticed that an account was recently created using this email address on Weyegram.
+                        If you created this account, no further action is needed — welcome aboard!
+                        If you did not sign up for Weyegram, you can safely ignore this message. 
+                    </h3>
+                </div>
+                <div class="chat-box">
+                    <div class="right">
+                        <p>Hey Where's my code?</p>
+                    </div >
+                    <div class="left">
+                        <p>Right here! Your code is <b>5037</b>!</p>
+                    </div>
+                </div>
+                <div class="fotter">
+                    <p>
+                        Thanks, The Weyegram Team.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

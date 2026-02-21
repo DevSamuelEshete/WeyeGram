@@ -1,0 +1,2 @@
+ALTER TABLE "messages" ADD COLUMN "sender_id" varchar NOT NULL;--> statement-breakpoint
+ALTER TABLE "messages" ADD CONSTRAINT "messages_sender_id_users_id_fk" FOREIGN KEY ("sender_id") REFERENCES "public"."users"("id") ON DELETE cascade ON UPDATE no action;
