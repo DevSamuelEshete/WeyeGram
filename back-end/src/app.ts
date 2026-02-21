@@ -34,7 +34,7 @@ const redisStore = new RedisStore({ client });
 
 app.use(
   cors({
-    origin: `http://localhost:${PORT}`,
+    origin: [`http://localhost:${PORT}`, "https://weyegram.onrender.com/"],
     credentials: true,
   }),
 );
